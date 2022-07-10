@@ -1,0 +1,20 @@
+div {
+    text-align: center;
+}
+
+span1 {
+    font-size: 100px;
+    border-bottom: 10px solid purple;
+    text-align: center;
+    background-color: gold;
+    border-left: 10px dotted palevioletred;
+    border-top: 10px double orange;
+}
+
+span2 {
+    color: burlywood;
+    background-color: gold;
+    border-right: 10px dotted palevioletred;
+    font-size: 120px;
+    border-top: 10px double orange;
+}
