@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Layout</title>
+    <style>
+        /********** Base styles **********/
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            height: 300px;
+        }
+
+        .description {
+            padding: 25px 15px;
+        }
+
+        .section {
+            border: 1px solid black;
+            background-color: #A52A2A;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: Helvetica;
+            color: white;
+        }
+
+        .title {
+            position: relative;
+            top: 0;
+            margin-top: 5px;
+            margin-bottom: 0;
+            left: 80%;
+        }
+
+        /* Simple Responsive Framework. */
+        .row {
+            width: 100%;
+        }
+
+        /********** Large (desktop) devices only **********/
+        @media (min-width: 992px) {
+
+            .col-lg-1,
+            .col-lg-2,
+            .col-lg-3,
+            .col-lg-4,
+            .col-lg-5,
+            .col-lg-6,
+            .col-lg-7,
+            .col-lg-8,
+            .col-lg-9,
+            .col-lg-10,
+            .col-lg-11,
+            .col-lg-12 {
+                float: left;
+                border: 1px solid green;
+            }
+
+            .col-lg-1 {
+                width: 8.33%;
+            }
+
+            .col-lg-2 {
+                width: 16.66%;
+            }
+
+            .col-lg-3 {
+                width: 25%;
+            }
+
+            .col-lg-4 {
+                width: 33.33%;
+            }
+
+            .col-lg-5 {
+                width: 41.66%;
+            }
+
+            .col-lg-6 {
+                width: 50%;
+            }
+
+            .col-lg-7 {
+                width: 58.33%;
+            }
+
+            .col-lg-8 {
+                width: 66.66%;
+            }
+
+            .col-lg-9 {
+                width: 74.99%;
+            }
+
+            .col-lg-10 {
+                width: 83.33%;
+            }
+
+            .col-lg-11 {
+                width: 91.66%;
+            }
+
+            .col-lg-12 {
+                width: 100%;
+            }
+        }
+
+        /********** Medium (tablet) devices only **********/
+        @media (min-width: 768px) and (max-width: 991px) {
+
+            .col-md-1,
+            .col-md-2,
+            .col-md-3,
+            .col-md-4,
+            .col-md-5,
+            .col-md-6,
+            .col-md-7,
+            .col-md-8,
+            .col-md-9,
+            .col-md-10,
+            .col-md-11,
+            .col-md-12 {
+                float: left;
+                border: 1px solid green;
+            }
+
+            .col-md-1 {
+                width: 8.33%;
+            }
+
+            .col-md-2 {
+                width: 16.66%;
+            }
+
+            .col-md-3 {
+                width: 25%;
+            }
+
+            .col-md-4 {
+                width: 33.33%;
+            }
+
+            .col-md-5 {
+                width: 41.66%;
+            }
+
+            .col-md-6 {
+                width: 50%;
+            }
+
+            .col-md-7 {
+                width: 58.33%;
+            }
+
+            .col-md-8 {
+                width: 66.66%;
+            }
+
+            .col-md-9 {
+                width: 74.99%;
+            }
+
+            .col-md-10 {
+                width: 83.33%;
+            }
+
+            .col-md-11 {
+                width: 91.66%;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .col-sm-1,
+            .col-sm-2,
+            .col-sm-3,
+            .col-sm-4,
+            .col-sm-5,
+            .col-sm-6,
+            .col-sm-7,
+            .col-sm-8,
+            .col-sm-9,
+            .col-sm-10,
+            .col-sm-11,
+            .col-sm-12 {
+                float: left;
+                border: 1px solid green;
+            }
+
+            .col-sm-1 {
+                width: 8.33%;
+            }
+
+            .col-sm-2 {
+                width: 16.66%;
+            }
+
+            .col-sm-3 {
+                width: 25%;
+            }
+
+            .col-sm-4 {
+                width: 33.33%;
+            }
+
+            .col-sm-5 {
+                width: 41.66%;
+            }
+
+            .col-sm-6 {
+                width: 50%;
+            }
+
+            .col-sm-7 {
+                width: 58.33%;
+            }
+
+            .col-sm-8 {
+                width: 66.66%;
+            }
+
+            .col-sm-9 {
+                width: 74.99%;
+            }
+
+            .col-sm-10 {
+                width: 83.33%;
+            }
+
+            .col-sm-11 {
+                width: 91.66%;
+            }
+
+            .col-sm-12 {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Michael's Menu</h1>
+
+    <div class="row">
+        <div class="section col-lg-4 col-md-6 col-sm-12">
+            <h4 class="title">Chicken</h4>
+            <p class="description">General Tso's chicken (Chinese: 左宗棠雞, pronounced [tswò]), also called General Tao's chicken or General Tsao’s chicken is a sweet and spicy deep-fried chicken dish that is served in North American Chinese restaurants. The dish is named after Zuo Zongtang (also romanized Tso Tsung-t'ang), a Qing dynasty statesman and military leader, although there is no recorded connection to him nor is the dish known in Hunan, Zuo's home province.</p>
+        </div>
+        <div class="section col-lg-4 col-md-6 col-sm-12">
+            <h4 class="title">Beef</h4>
+            <p class="description">Mongolian beef is a dish from Taiwan consisting of sliced beef, typically flank steak, usually made with onions.[1] The beef is commonly paired with scallions or mixed vegetables and is often not spicy. The dish is often served over steamed rice, or in the US, over crispy fried cellophane noodles. It is a staple dish of American Chinese restaurants. Despite its name, the dish has nothing to do with Mongolian cuisine.</p>
+        </div>
+        <div class="section col-lg-4 col-md-12 col-sm-12">
+            <h4 class="title">Sushi</h4>
+            <p class="description">Sushi (すし, 寿司, 鮨, 鮓, pronounced [sɯɕiꜜ] or [sɯꜜɕi]) is a Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt, accompanied by a variety of ingredients (ねた, neta), such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice", also referred to as shari (しゃり), or sumeshi (酢飯).</p>
+        </div>
+    </div>
+</body>
+
+</html>
